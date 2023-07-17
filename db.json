@@ -1,24 +1,259 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Product 1",
-        "description": "This is product 1",
-        "price": 100
-      },
-      {
-        "id": 2,
-        "name": "Product 2",
-        "description": "This is product 2",
-        "price": 200
-      },
-      {
-        "id": 3,
-        "name": "Product 3",
-        "description": "This is product 3",
-        "price": 300
-      }
-    ]
-  
-  }
-
+  "products": [
+    {
+      "id": 1,
+      "name": "Vetements doudoune",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque",
+      "img": "",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Livre HTML5",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.",
+      "img": "",
+      "price": 200
+    },
+    {
+      "id": 3,
+      "name": "Ordinateur HP",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque",
+      "img": "",
+      "price": 300
+    },
+    {
+      "id": 4,
+      "name": "Bicyclette moderne",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.",
+      "img": "",
+      "price": 50
+    },
+    {
+      "id": 6,
+      "name": "Four micro-onde",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+      "img": "",
+      "price": 700
+    },
+    {
+      "id": 6,
+      "name": "Téléphone portable",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque",
+      "img": "",
+      "price": 200
+    },
+    {
+      "id": 7,
+      "name": "Écouteur JBL",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+      "img": "",
+      "price": 40
+    },
+    {
+      "id": 8,
+      "name": "Montre Rolex",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqueo.",
+      "img": "",
+      "price": 150
+    },
+    {
+      "name": "",
+      "description": "",
+      "img": "",
+      "price": "",
+      "id": 9
+    },
+    {
+      "name": "Matelas azama",
+      "description": "",
+      "price": "25",
+      "decription": "Ce matelas est idéal pour vous !",
+      "img": "",
+      "id": 10
+    },
+    {
+      "name": "omo",
+      "description": "",
+      "img": "",
+      "price": "34",
+      "decription": "etrcytvui",
+      "id": 11
+    },
+    {
+      "name": "Milam",
+      "description": "",
+      "img": "",
+      "price": "78",
+      "decription": "ghjgjfgj",
+      "id": 12
+    },
+    {
+      "name": "Frittes",
+      "description": "Ces plat est sur génial... je vous le recommande !",
+      "img": "",
+      "price": "24",
+      "id": 13
+    },
+    {
+      "name": "Matomo",
+      "description": "Matomo est un système de gestion de contenu",
+      "img": "",
+      "price": "5000",
+      "id": 14
+    },
+    {
+      "name": "Maria",
+      "img": "",
+      "description": "bvyufvguj",
+      "price": "45",
+      "id": 15
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "k",
+      "price": "34",
+      "id": 16
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "k",
+      "price": "34",
+      "id": 17
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "k",
+      "price": "34",
+      "id": 18
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "k",
+      "price": "34",
+      "id": 19
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "k",
+      "price": "34",
+      "id": 20
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "k",
+      "price": "34",
+      "id": 21
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "k",
+      "price": "34",
+      "id": 22
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "kjk",
+      "price": "34",
+      "id": 23
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "kjk",
+      "price": "34",
+      "id": 24
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "kjk",
+      "price": "34",
+      "id": 25
+    },
+    {
+      "name": "jjj",
+      "img": "",
+      "description": "kjk",
+      "price": "34",
+      "id": 26
+    },
+    {
+      "name": "hhhh",
+      "img": "",
+      "description": "iii",
+      "price": "66",
+      "id": 27
+    },
+    {
+      "name": "hhhh",
+      "img": "",
+      "description": "iii",
+      "price": "66",
+      "id": 28
+    },
+    {
+      "name": "hhhh",
+      "img": "",
+      "description": "iii",
+      "price": "66",
+      "id": 29
+    },
+    {
+      "name": "jj",
+      "img": "",
+      "description": "kkk",
+      "price": "77",
+      "id": 30
+    },
+    {
+      "name": "jj",
+      "img": "",
+      "description": "kii",
+      "price": "66",
+      "id": 31
+    },
+    {
+      "name": "Bohemia",
+      "img": "",
+      "description": "Merci de nous contacter",
+      "price": "24",
+      "id": 32
+    },
+    {
+      "name": "Visilia",
+      "img": "",
+      "description": "Visilia est un produit trop cool et chouette qui va vous faciliter va vie !",
+      "price": "190",
+      "id": 33
+    },
+    {
+      "name": "olole",
+      "img": "",
+      "description": "gjvjvbj",
+      "price": "12",
+      "id": 34
+    },
+    {
+      "name": "Cravate Chic",
+      "img": "",
+      "description": "Des cravates chic en moindre cout ! juste pour vous regaler !",
+      "price": "5",
+      "id": 35
+    },
+    {
+      "name": "jgjq",
+      "img": "",
+      "description": "yugyiq",
+      "price": "12",
+      "id": 36
+    }
+  ]
+}

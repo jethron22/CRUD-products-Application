@@ -1,0 +1,98 @@
+.body {
+
+    width: 100%;
+}
+
+.products-container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(250, 249, 249);
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+    border: 2px solid rgb(199, 197, 197);
+    border-radius: 7px;
+    
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 200px;
+    
+}
+
+.product-price-section
+{
+    display: flex;
+    margin-top: 25px;
+    padding: 10px;
+
+}
+
+.item-actions-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.product-title {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-size: 25px;
+
+}
+
+.add-buttons
+{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    
+}
+
+.button-container {
+    display: flex;
+    margin-right: 42px;
+   margin-top: 55px;
+}
+
+.button {
+    display: flex ;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    background-color: rgb(39, 39, 184);
+    border-radius: 7px;
+    justify-content: center;
+
+}
+
+.edit-button {
+   background-color:  rgb(39, 39, 184);
+   color: white;
+   border-radius: 5px;
+   border: none;
+   padding: 5px;
+}
+
+.delete-button {
+background-color: red;
+color: white;
+border-radius: 5px;
+border: none;
+padding: 5px;
+}
+
+
+

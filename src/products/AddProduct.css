@@ -1,0 +1,64 @@
+.form-create-product {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+   
+}
+
+.title-add-products
+{
+    margin-bottom: 25px;
+}
+
+.input-name {
+    outline: none;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+}
+
+.input-desc {
+    outline: none;
+    height: 80px;
+    border-radius: 3px;
+    border: none;
+}
+
+.input-price {
+    outline: none;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+}
+
+.form-create-container {
+display: flex;
+justify-content: center;
+margin-top: 150px;
+background-color: rgb(197, 194, 194);
+width: 400px;
+margin: auto;
+padding: 25px;
+margin-top: 100px;
+
+}
+
+.form-add-button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    border-radius: 7px;
+    background-color: rgb(4, 4, 184);
+}
+
+.container-button
+{
+    display: flex;
+    margin-top: 25px;
+    padding: 10px;
+    justify-content: end;
+}
