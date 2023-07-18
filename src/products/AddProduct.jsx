@@ -37,10 +37,10 @@ function AddProduct() {
                         <input className='input-name' maxlength="35" pattern="^.{0, 35}$" required type="text" placeholder='  ajouter un nom' onChange={(e) => setInputData({ ...inputData, name: e.target.value })} />
 
                         <span className="desctext">Description</span>
-                        <textarea maxlength="78" pattern="^.{0,78}$" className='input-desc' type="text" placeholder='  ajouter une description' onChange={(e) => setInputData({ ...inputData, description: e.target.value })} />
+                        <textarea required maxlength="78" pattern="^.{0,78}$" className='input-desc' type="text" placeholder='  ajouter une description' onChange={(e) => setInputData({ ...inputData, description: e.target.value })} />
 
                         <span className="price-text">Prix</span>
-                        <input className='input-price' type="number" placeholder='  ajouter un prix' onChange={(e) => setInputData({ ...inputData, price: e.target.value })} />
+                        <input required className='input-price' type="number" placeholder='  ajouter un prix' onChange={(e) => setInputData({ ...inputData, price: e.target.value })} />
 
                         <div className='form-add-button-container'>
                             <div className='container-button'>
