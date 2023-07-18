@@ -5,23 +5,17 @@ import AddProduct from '../products/AddProduct'
 import EditProduct from '../products/EditProduct'
 import DeleteProduct from '../products/DeleteProduct'
 
-function AppRoutes() {
+export const AppRoutes =() => {
   return (
-   <BrowserRouter>
-
     
+   <BrowserRouter>
    <Routes>
    <Route path='/' element={<App />} />
    <Route path='/create' element={<AddProduct />} />
-   <Route path='/edit' element={<EditProduct />} />
+   <Route path="/update/:id" element={<EditProduct />} />
    <Route path='/delete' element={<DeleteProduct />} />
    </Routes>
- 
-
-  
-
    </BrowserRouter>
   )
 }
 
-export default AppRoutes

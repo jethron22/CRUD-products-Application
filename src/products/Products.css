@@ -87,10 +87,8 @@ font-size: 25px;
 }
 
 .delete-button {
-background-color: red;
-color: white;
-border-radius: 5px;
-border: none;
+
+color: red;
 padding: 5px;
 }
 
