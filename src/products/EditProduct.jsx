@@ -48,14 +48,17 @@ function EditProduct() {
             <h3 className='title-add-products'>Modifier {data.name}</h3>
 
             <span>Produit No : 
-            <input disabled value={data.id} className='input-name' required type="text" />
+            <input disabled value={data.id} required type="text" />
             </span>
 
-            <span className="desctext">Nom du produit</span>
-            <input value={data.name} className='input-desc' type="text" placeholder='nom du produit'onChange={(e)=> setData({...data, name: e.target.value})}  />
 
+
+            <span className=''>Nom du produit</span>
+            
+            <input value={data.name} maxlength="35" pattern="^.{0,35}$"  className='input-name' type="text" placeholder='nom du produit'onChange={(e)=> setData({...data, name: e.target.value})}  />
+  
             <span className="desctext">Description</span>
-            <input value={data.description} className='input-desc' type="text" placeholder='Modifier la description' onChange={(e)=> setData({...data, description: e.target.value})}  />
+            <textarea value={data.description} maxlength="78" pattern="^.{0,78}$" className='input-desc' type="text" placeholder='Modifier la description' onChange={(e)=> setData({...data, description: e.target.value})}  />
 
             <span className="price-text">Prix</span>
             <input value={data.price} className='input-price' type="number" placeholder='Modifier le prix' onChange={(e)=> setData({...data, price: e.target.value})} />

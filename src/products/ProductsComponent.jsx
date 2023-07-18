@@ -4,7 +4,9 @@ import { useEffect, useState } from 'react';
 import "./Products.css"
 import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from "react-icons/ai";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
+
+
 
 
 
@@ -14,7 +16,21 @@ function ProductsComponent() {
 
     const [data, setData] = useState([])
 
+
     const navigate = useNavigate()
+
+    const handleDelete = (id) => {
+        const confirmation = window.confirm("Voulez vous vraiment supprimer ce produit ?");
+
+        if(confirmation) {
+                axios.delete("http://localhost:3000/products/"+id)
+                .then( res=> {
+                    window.location.reload();
+                    alert("Vous venez de supprimer l'item avec succès !!")
+                    
+                }).catch((err)=> console.log(err))
+        }
+    }
 
 
     useEffect(() => {
@@ -50,7 +66,7 @@ function ProductsComponent() {
                                         <div className='product-price'><strong>Prix : {item.price} Euro</strong></div>
                                     </div>
                                     <div className='item-actions-buttons'>
-                                        <Link to="/delete" className='delete-button'>Supprimer</Link>
+                                        <button onClick={()=> handleDelete(item.id)} className='delete-button'>Supprimer</button>
                                         <button onClick={()=> navigate(`/update/${item.id}`)} className='edit-button'><AiOutlineEdit size={12} /><span className='text-delete'>Modifier</span></button>
                                     </div>
                                 </div>
@@ -59,8 +75,10 @@ function ProductsComponent() {
                     }
                 </div>
             </div>
+           
         </div>
     )
 }
 
 export default ProductsComponent;
+

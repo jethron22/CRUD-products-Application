@@ -34,10 +34,10 @@ function AddProduct() {
                         <h3 className='title-add-products'>Ajouter un nouveau produit</h3>
 
                         <span>Nom du produit</span>
-                        <input className='input-name' required type="text" placeholder='  ajouter un nom' onChange={(e) => setInputData({ ...inputData, name: e.target.value })} />
+                        <input className='input-name' maxlength="35" pattern="^.{0, 35}$" required type="text" placeholder='  ajouter un nom' onChange={(e) => setInputData({ ...inputData, name: e.target.value })} />
 
                         <span className="desctext">Description</span>
-                        <input className='input-desc' type="text" placeholder='  ajouter une description' onChange={(e) => setInputData({ ...inputData, description: e.target.value })} />
+                        <textarea maxlength="78" pattern="^.{0,78}$" className='input-desc' type="text" placeholder='  ajouter une description' onChange={(e) => setInputData({ ...inputData, description: e.target.value })} />
 
                         <span className="price-text">Prix</span>
                         <input className='input-price' type="number" placeholder='  ajouter un prix' onChange={(e) => setInputData({ ...inputData, price: e.target.value })} />

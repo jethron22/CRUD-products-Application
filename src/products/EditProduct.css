@@ -5,14 +5,19 @@
    
 }
 
-.title-add-products
-{
-    margin-bottom: 25px;
+
+
+.container-name {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
 }
 
 .input-name {
+    display: flex;
     outline: none;
-    height: 25px;
+    height: 40px;
+    flex-wrap: wrap ;
     border-radius: 3px;
     border: none;
 }
