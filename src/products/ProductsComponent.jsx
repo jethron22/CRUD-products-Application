@@ -15,8 +15,23 @@ import { useNavigate} from 'react-router-dom';
 function ProductsComponent() {
 
     const [data, setData] = useState([])
+    const [value, setValue] = useState()
 
 
+
+    const handleSearch = async(e)=> {
+        e.preventDefault();
+          
+        return await axios.get(`http://localhost:3000/products?q=${value}`).then((response)=> {
+            setData(response.data)
+            setValue("")
+        }).catch((err)=> console.log(err))
+
+    }
+
+
+
+    
     const navigate = useNavigate()
 
     const handleDelete = (id) => {
@@ -37,12 +52,18 @@ function ProductsComponent() {
         axios.get("http://localhost:3000/products/").then((response) => {
 
             setData(response.data.reverse())
-
         }).catch((error) => console.log(error))
     }, [])
     console.log(data)
     return (
         <div className='body'>
+
+            <form className="search_component" onSubmit={handleSearch} >
+              <span>
+              <input value={value} className='search__input' type='text' onChange={(e)=> setValue(e.target.value)} /><button type='submit' className='search__button'>Rechercher</button>   
+            </span> 
+            </form>
+
             <div className='add-buttons'>
                 <div className='button-container'>
                     <Link to="/create"><button className='button' >Ajouter +</button> </Link>

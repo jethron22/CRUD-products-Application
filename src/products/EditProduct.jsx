@@ -51,8 +51,6 @@ function EditProduct() {
             <input disabled value={data.id} required type="text" />
             </span>
 
-
-
             <span className=''>Modifier le nom du produit</span>
             
             <input value={data.name} maxlength="35" pattern="^.{0,35}$"  className='input-name' type="text" placeholder='nom du produit'onChange={(e)=> setData({...data, name: e.target.value})}  />
