@@ -47,4 +47,4 @@ L'application peut être personnalisée en modifiant les fichiers CSS. Vous pouv
 
 L'application est sous licence MIT.
 
-## Merci pour votre intérêt pour l'application CRUD-products-application !
+## Merci pour votre intérêt pour cet Appli !
