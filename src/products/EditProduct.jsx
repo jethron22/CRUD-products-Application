@@ -45,7 +45,7 @@ function EditProduct() {
 
           <div className='form-create-product'>
 
-            <h3 className='title-add-products'>Modifier {data.name}</h3>
+            <h3 className='title-add-products'>Modifier le produit "{data.name}"</h3>
 
             <span className='id-product'>Produit No : 
             <input disabled value={data.id} required type="text" />

@@ -61,7 +61,7 @@ font-size: 25px;
 .add-buttons
 {
     display: flex;
-    justify-content: end;
+
     padding: 20px;
     
 }
@@ -69,6 +69,8 @@ font-size: 25px;
 .button-container {
     display: flex;
     margin-right: 42px;
+    justify-content: space-between;
+    width: 100%;
    margin-top: 55px;
 }
 
@@ -99,6 +101,22 @@ padding: 5px;
 border: none;
 border: 1px solid red;
 border-radius: 5px;
+}
+
+.search__button {
+    border: none;
+    color: white;
+    padding: 8px;
+    border-top-right-radius: 5px;
+    background-color: rgb(8, 99, 204);
+}
+
+.search__input {
+
+    outline: none;
+    height: 40px;
+    width: 250px;
+    margin-left: 11px;
 }
 
 @media (max-width: 768px) {
