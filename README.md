@@ -8,7 +8,7 @@ Cette application est une application CRUD simple pour gérer des produits. Elle
 Pour installer l'application, vous devez d'abord cloner le repository :
 
 ```
-git clone https://github.com/jethron22/CRUD-products-Applicationn.git
+git clone https://github.com/jethron22/CRUD-products-Application.git
 ```
 
 Une fois le repository cloné, vous devez installer les dépendances :
