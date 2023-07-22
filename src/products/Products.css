@@ -5,6 +5,7 @@
 
 .products-container {
     display: flex;
+    justify-content: start;
     padding: 10px;
     margin: 10px;
     flex-wrap: wrap;
@@ -119,6 +120,13 @@ border-radius: 5px;
     margin-left: 11px;
 }
 
+.noProduct {
+    
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
 @media (max-width: 768px) {
     .product-cards {
       display: flex;
@@ -161,11 +169,7 @@ border-radius: 5px;
         width: 100%;
     }
 
-    .noProduct {
-        display: flex;
-        align-items: center;
-       
-    }
+  
 
    
     

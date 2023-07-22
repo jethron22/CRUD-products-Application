@@ -76,26 +76,34 @@ function ProductsComponent() {
                         </div>
                     </form>
 
-                    <div>Produits disponibles : 234 </div>
-
                     <Link to="/create"><button className='button' >Ajouter +</button> </Link>
                 </div>
             </div>
             <div>
 
                 <div className='products-container'>
-                    <div className='noProduct'>
-                        <p>
-                            {data.length === 0 && <p>Veuillez ajouter un produit !</p>}
-                        </p>
 
-                    </div>
+                    {data.length === 0 &&
+                        <div className='noProduct'>
+                            <div  >
+                                <p>
+                                    <span  >Veuillez ajouter un produit !</span>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    }
+
 
                     {
                         data.map((item, index) => {
                             return (
+
                                 <div className='product-cards' key={index}>
+
                                     <div className="items">
+
                                         <div className='product-title'>{item.name}</div>
                                         <img className='product-img' />
                                         <div className='product-decription'>{item.description}</div>
