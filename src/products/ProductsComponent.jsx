@@ -63,20 +63,20 @@ function ProductsComponent() {
     return (
         <div className='body'>
 
-            
+
             <div className='add-buttons'>
                 <div className='button-container'>
-                <form onSubmit={handleSearch} className='search_container' >
-                <div>
-                    <span className="search_input_item">
-                        <input value={value} className='search__input' type='text' placeholder='tapez le nom du produit ici..' onChange={(e) => setValue(e.target.value)} /></span>
-                    <span className='button_submit_search'>
-                        <button type='submit' className='search__button'>Rechercher</button>
-                    </span>
-                </div>
-            </form>
+                    <form onSubmit={handleSearch} className='search_container' >
+                        <div>
+                            <span className="search_input_item">
+                                <input value={value} className='search__input' type='text' placeholder='tapez le nom du produit ici..' onChange={(e) => setValue(e.target.value)} /></span>
+                            <span className='button_submit_search'>
+                                <button type='submit' className='search__button'>Rechercher</button>
+                            </span>
+                        </div>
+                    </form>
 
-           <div>Produits disponibles : 234 </div>
+                    <div>Produits disponibles : 234 </div>
 
                     <Link to="/create"><button className='button' >Ajouter +</button> </Link>
                 </div>
@@ -84,6 +84,12 @@ function ProductsComponent() {
             <div>
 
                 <div className='products-container'>
+                    <div className='noProduct'>
+                        <p>
+                            {data.length === 0 && <p>Veuillez ajouter un produit !</p>}
+                        </p>
+
+                    </div>
 
                     {
                         data.map((item, index) => {
