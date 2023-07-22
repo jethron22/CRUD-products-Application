@@ -7,11 +7,6 @@ import { AiOutlineEdit } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
 
 
-
-
-
-
-
 function ProductsComponent() {
 
     const [data, setData] = useState([])

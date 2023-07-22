@@ -17,7 +17,8 @@ function AddProduct() {
         e.preventDefault();
 
         axios.post("http://localhost:3000/products", inputData).then(response => {
-            alert("Product created successfully");
+
+            alert("Ajout fait avec succès !");
             navigate("/")
 
         }).catch((err) => console.log(err))
